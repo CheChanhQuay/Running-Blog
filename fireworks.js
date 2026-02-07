@@ -46,17 +46,17 @@ class Fireworks {
         });
     }
 
-    // Auto launch fireworks more frequently
+    // Auto launch fireworks at moderate frequency
     autoLaunch() {
         setInterval(() => {
-            // Launch 1-2 fireworks at random positions
-            const count = Math.random() > 0.5 ? 2 : 1;
+            // Launch 1 firework at random position
+            const count = Math.random() > 0.7 ? 2 : 1; // 30% chance for 2, 70% for 1
             for (let i = 0; i < count; i++) {
                 const x = Math.random() * this.canvas.width;
                 const y = Math.random() * (this.canvas.height * 0.3) + 50;
                 this.createRocket(x, y);
             }
-        }, 1500 + Math.random() * 1500); // Every 1.5-3 seconds
+        }, 4000 + Math.random() * 2000); // Every 4-6 seconds
     }
 
     createRocket(targetX, targetY) {
@@ -135,7 +135,7 @@ class Fireworks {
     }
 
     createExplosion(x, y, baseColor, type) {
-        const particleCount = 80 + Math.random() * 120; // 80-200 particles
+        const particleCount = 50 + Math.random() * 50; // 50-100 particles
 
         for (let i = 0; i < particleCount; i++) {
             let angle, velocity, particle;
