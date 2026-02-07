@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chi tiết sản phẩm chạy bộ">
+    <title>Sản Phẩm - Running Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">🏃‍♂️ Running Blog</a>
+            <button class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-menu">
+                <a href="index.html">Trang chủ</a>
+                <a href="blog.html">Bài viết</a>
+                <a href="products.html">Sản phẩm</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PRODUCT DETAIL -->
+    <section class="section">
+        <div class="container">
+            <div class="product-detail" id="product-content">
+                <!-- Product content will be loaded here by JavaScript -->
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="products.html" class="btn btn-outline">← Quay lại danh sách sản phẩm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏃‍♂️ Running Blog</h3>
+                    <p>Chia sẻ niềm đam mê chạy bộ, kinh nghiệm và những hành trình khám phá bản thân qua từng bước
+                        chạy.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Kết Nhanh</h3>
+                    <p><a href="index.html">Trang chủ</a></p>
+                    <p><a href="blog.html">Bài viết</a></p>
+                    <p><a href="products.html">Sản phẩm</a></p>
+                    <p><a href="about.html">Giới thiệu</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi Tôi</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Running Blog. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+    <!-- FIREWORKS CANVAS -->
+    <canvas id="fireworks-canvas"></canvas>
+    <script src="fireworks.js"></script>
+</body>
+
+</html>

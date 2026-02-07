@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với chúng tôi">
+    <title>Liên Hệ - Running Blog - Tết Ất Tỵ 2026 🧧</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">🏃‍♂️ Running Blog</a>
+            <button class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-menu">
+                <a href="index.html">Trang chủ</a>
+                <a href="blog.html">Bài viết</a>
+                <a href="products.html">Sản phẩm</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTACT CONTENT -->
+    <section class="section">
+        <div class="container">
+            <h1 class="section-title">🎊 Liên Hệ Với Tôi - Chúc Mừng Năm Mới 🧧</h1>
+            <p style="text-align: center; color: #666; margin-bottom: 3rem;">Bạn có câu hỏi hoặc muốn chia sẻ? Hãy gửi
+                tin nhắn cho tôi!</p>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                    <div
+                        style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📧</div>
+                        <h3 style="color: #27ae60; margin-bottom: 0.5rem;">Email</h3>
+                        <p>running.blog@example.com</p>
+                    </div>
+
+                    <div
+                        style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📱</div>
+                        <h3 style="color: #27ae60; margin-bottom: 0.5rem;">Điện thoại</h3>
+                        <p>+84 123 456 789</p>
+                    </div>
+
+                    <div
+                        style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📍</div>
+                        <h3 style="color: #27ae60; margin-bottom: 0.5rem;">Địa chỉ</h3>
+                        <p>Hà Nội, Việt Nam</p>
+                    </div>
+                </div>
+
+                <div class="post-detail">
+                    <h2>Gửi Tin Nhắn</h2>
+                    <form onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Họ và tên *</label>
+                            <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Chủ đề</label>
+                            <input type="text" id="subject" name="subject" placeholder="Tiêu đề tin nhắn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung tin nhắn *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Viết tin nhắn của bạn tại đây..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+
+                <div
+                    style="background: #f9f9f9; padding: 2rem; border-radius: 12px; margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 1rem;">Theo Dõi Tôi Trên Mạng Xã Hội</h3>
+                    <div class="social-links" style="justify-content: center;">
+                        <a href="#" title="Facebook" style="background: #3b5998; color: white;"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram" style="background: #E1306C; color: white;"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" title="X" style="background: #000000; color: white;"><i
+                                class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏃‍♂️ Running Blog</h3>
+                    <p>Chia sẻ niềm đam mê chạy bộ, kinh nghiệm và những hành trình khám phá bản thân qua từng bước
+                        chạy.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Kết Nhanh</h3>
+                    <p><a href="index.html">Trang chủ</a></p>
+                    <p><a href="blog.html">Bài viết</a></p>
+                    <p><a href="products.html">Sản phẩm</a></p>
+                    <p><a href="about.html">Giới thiệu</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi Tôi</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Running Blog. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+    <!-- FIREWORKS CANVAS -->
+    <canvas id="fireworks-canvas"></canvas>
+    <script src="fireworks.js"></script>
+</body>
+
+</html>

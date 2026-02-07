@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chi tiết bài viết về chạy bộ">
+    <title>Bài Viết - Running Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">🏃‍♂️ Running Blog</a>
+            <button class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-menu">
+                <a href="index.html">Trang chủ</a>
+                <a href="blog.html">Bài viết</a>
+                <a href="products.html">Sản phẩm</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- POST DETAIL -->
+    <section class="section">
+        <div class="container">
+            <div class="post-detail" id="post-content">
+                <!-- Post content will be loaded here by JavaScript -->
+            </div>
+
+            <!-- COMMENTS SECTION -->
+            <div class="post-detail comments-section">
+                <h3>💬 Bình luận (3)</h3>
+
+                <div class="comment">
+                    <div class="comment-author">Thanh Huyền</div>
+                    <div class="comment-date">5 Tháng 2, 2026</div>
+                    <p>Bài viết rất hữu ích! Cảm ơn bạn đã chia sẻ những kinh nghiệm quý báu này.</p>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-author">Trần Ngọc Nhất Hạnh</div>
+                    <div class="comment-date">4 Tháng 2, 2026</div>
+                    <p>Mình đang tập chạy bộ và bài viết này giúp mình rất nhiều. Đặc biệt là phần về giày chạy!</p>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-author">Thành Nhân</div>
+                    <div class="comment-date">3 Tháng 2, 2026</div>
+                    <p>Tuyệt vời! Mình sẽ áp dụng ngay những bí quyết này vào buổi chạy sáng mai.</p>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Để lại bình luận</h3>
+                <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã bình luận!');">
+                    <div class="form-group">
+                        <label for="comment-name">Tên của bạn</label>
+                        <input type="text" id="comment-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-email">Email</label>
+                        <input type="email" id="comment-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment-message">Bình luận</label>
+                        <textarea id="comment-message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                </form>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="blog.html" class="btn btn-outline">← Quay lại danh sách bài viết</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏃‍♂️ Running Blog</h3>
+                    <p>Chia sẻ niềm đam mê chạy bộ, kinh nghiệm và những hành trình khám phá bản thân qua từng bước
+                        chạy.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên Kết Nhanh</h3>
+                    <p><a href="index.html">Trang chủ</a></p>
+                    <p><a href="blog.html">Bài viết</a></p>
+                    <p><a href="products.html">Sản phẩm</a></p>
+                    <p><a href="about.html">Giới thiệu</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Theo Dõi Tôi</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="X"><i class="fab fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Running Blog. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+
+    <!-- FIREWORKS CANVAS -->
+    <canvas id="fireworks-canvas"></canvas>
+    <script src="fireworks.js"></script>
+</body>
+
+</html>
