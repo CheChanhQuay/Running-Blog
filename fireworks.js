@@ -10,6 +10,10 @@ class Fireworks {
         this.particles = [];
         this.rockets = [];
 
+        // Performance settings
+        this.maxParticles = 300; // Maximum particles allowed at once
+        this.maxRockets = 3; // Maximum rockets at once
+
         // Enhanced Tet theme colors (more vibrant)
         this.tetColors = [
             '#FF0000', // Bright red
@@ -49,12 +53,15 @@ class Fireworks {
     // Auto launch fireworks at moderate frequency
     autoLaunch() {
         setInterval(() => {
-            // Launch 1 firework at random position
-            const count = Math.random() > 0.7 ? 2 : 1; // 30% chance for 2, 70% for 1
-            for (let i = 0; i < count; i++) {
-                const x = Math.random() * this.canvas.width;
-                const y = Math.random() * (this.canvas.height * 0.3) + 50;
-                this.createRocket(x, y);
+            // Only launch if under particle and rocket limits
+            if (this.particles.length < this.maxParticles && this.rockets.length < this.maxRockets) {
+                // Launch 1 firework at random position
+                const count = Math.random() > 0.7 ? 2 : 1; // 30% chance for 2, 70% for 1
+                for (let i = 0; i < count; i++) {
+                    const x = Math.random() * this.canvas.width;
+                    const y = Math.random() * (this.canvas.height * 0.3) + 50;
+                    this.createRocket(x, y);
+                }
             }
         }, 4000 + Math.random() * 2000); // Every 4-6 seconds
     }
