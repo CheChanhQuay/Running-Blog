@@ -131,9 +131,44 @@ ul {
     font-weight: 800;
     display: flex;
     align-items: center;
+    gap: 12px;
+    /* Khoảng cách giữa logo và text */
     transition: var(--transition);
     position: relative;
     z-index: 10;
+}
+
+/* TẾT RUNNING 2026 TEXT - GRADIENT ĐỎ VÀNG */
+.navbar-text-tet {
+    font-size: 1.65rem;
+    /* Tăng 10%: 1.5rem → 1.65rem */
+    font-weight: 900;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    /* GIỮ TEXT TRÊN 1 HÀNG - không xuống dòng */
+
+    /* Gradient đỏ-vàng Tết rực rỡ */
+    background: linear-gradient(135deg, #DC143C 0%, #FF6B6B 25%, #FFD700 50%, #FFA500 75%, #DC143C 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Animation gradient chảy */
+    animation: tet-gradient 3s linear infinite;
+
+    /* Text shadow cho độ sâu */
+    filter: drop-shadow(0 2px 3px rgba(220, 20, 60, 0.3));
+}
+
+@keyframes tet-gradient {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
 }
 
 /* RESPONSIVE LOGO STYLING WITH SMART COLOR ADAPTATION */
@@ -170,6 +205,12 @@ ul {
         margin: -20px 0;
         /* Tăng 10%: -18px → -20px */
     }
+
+    .navbar-text-tet {
+        font-size: 1.32rem;
+        /* Tăng 10%: 1.2rem → 1.32rem (Tablet) */
+        letter-spacing: 0.5px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -179,6 +220,17 @@ ul {
         max-width: 350px;
         margin: -17px 0;
         /* Tăng 10%: -15px → -17px */
+    }
+
+    .navbar-text-tet {
+        font-size: 1.0rem;
+        /* Tăng 10%: 0.9rem → 1.0rem (Mobile) */
+        letter-spacing: 0px;
+    }
+
+    .navbar-brand {
+        gap: 8px;
+        /* Khoảng cách nhỏ hơn trên mobile */
     }
 }
 
